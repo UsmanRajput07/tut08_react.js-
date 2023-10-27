@@ -8,8 +8,13 @@ class A extends React.Component {
     super();
     this.state = { name: "us", surname: "Rajput", course: "BCA" };
   }
+
   // method
   render() {
+    this.setState({
+      ...this.state,
+      name: "usman",
+    });
     return (
       <>
         <h1>
